@@ -1,11 +1,13 @@
-str_ = input('Введите строку: ')
-reverse_str = ""
+def palindrom(str_):
+    str_ = str_.lower()
+    reverse_str = ""
+    for char in reversed(str_):
+        reverse_str += char
 
-for char in reversed(str_):
-	reverse_str += char
+    if str_ == reverse_str:
+        return True
 
-if str_ == reverse_str:
-	print(True)
+    else:
+        return False
 
-else:
-	print(False)
+print(palindrom(input('Введите строку: ')))
