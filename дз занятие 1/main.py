@@ -1,4 +1,4 @@
-def palindrom(str_):
+def is_palindrom(str_):
     str_ = str_.lower()
     reverse_str = ""
     for char in reversed(str_):
@@ -10,4 +10,4 @@ def palindrom(str_):
     else:
         return False
 
-print(palindrom(input('Введите строку: ')))
+print(is_palindrom(input('Введите строку: ')))
