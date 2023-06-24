@@ -3,7 +3,7 @@ def is_palindrom(str_):
     reverse_str = ""
     for char in reversed(str_):
         reverse_str += char
-
+    
     if str_ == reverse_str:
         return True
 
