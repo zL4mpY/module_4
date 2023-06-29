@@ -1,10 +1,10 @@
-def is_palindrom(str_):
-    str_ = str_.lower()
-    reverse_str = ""
-    for char in reversed(str_):
-        reverse_str += char
+def is_palindrom(word):
+    word = word.lower()
+    reversed_word = ""
+    for char in reversed(word):
+        reversed_word += char
     
-    if str_ == reverse_str:
+    if word == reversed_word:
         return True
 
     else:
